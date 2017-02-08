@@ -59,6 +59,7 @@ Movie List Example
             },
             add: function () {
                 this.push('movies', this._newMovie)
+                this.set('_newMovie', '')
             },
             onDelete: function (event) {
                 this.splice('movies', event.detail.index, 1);
